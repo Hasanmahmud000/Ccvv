@@ -419,9 +419,9 @@ Google Play Store or join our Telegram channel for the latest updates and app li
 
   // Streams buttons dynamic
   let streamsHtml = '';
-  if (Array.isArray(m.Streams) && m.Streams.length > 0) {
-    streamsHtml = m.Streams.map(s => `<a href="${s.url}" target="_blank" rel="noopener noreferrer">${s.name}</a>`).join(' ');
-  }
+if (Array.isArray(m.Streams) && m.Streams.length > 0) {
+  streamsHtml = m.Streams.map(s => `<a href="${s.url}" target="_blank" rel="noopener noreferrer">${s.name}</a>`).join(' ');
+}
 
   div.innerHTML = `
     ${sportHtml}
